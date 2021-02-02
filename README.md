@@ -35,4 +35,4 @@ Format of level files:
         </Level>
         
 There's no UI as this is just a demo project, so after win or lose it just restarts.
-
+Paddle bounce logic/ball directions of 4 equal parts is same as in breakout atari.
