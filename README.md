@@ -7,27 +7,29 @@ XMLfiles are containing Level files.
 Format of level files: 
       
       <Level
-        RowCount=""
-        ColumnCount=""
-        RowSpacing=""
-        ColumnSpacing=""
-        BackgroundTexture=""
+        RowCount=""                 // Number of bricks possible in a column 
+        ColumnCount=""              // Number of bricks possible in a row 
+        RowSpacing=""               // Space between brick rows      
+        ColumnSpacing=""            // Space between brick columns
+        BackgroundTexture=""        // Background texture in .png
         >
         
         <BrickTypes>
         <BrickType
-        Id=""
-        Texture=""
-        HitPoints=""
-        HitSound=""
-        BreakSound=""
-        BreakScore="" />
-        </BrickTypes>
+        
+        Id=""                 // One letter identifier e.g. "S" for soft brick
+        Texture=""            // Brick texture in .png
+        HitPoints=""          // Number of times it takes to hit a brick in order to break it
+        HitSound=""           // Sound when hit
+        BreakSound=""         // Sound when brick breaks
+        BreakScore="" />      // Score gained when a brick breaks
+       
+       </BrickTypes>
         
         <Bricks>
-        example: S S S S S S S S S S S S S S       //"S" means brick type ID. " " means column spacing and _ means no brick there.
-                 S S S S S _ _ _ _ S S S S S       //  Number of bricks possible in a row => Column count, in a column => rowCount
-                 S S S S S _ _ _ _ S S S S S  	   // Level is loaded as drawn on here
+    e.g. S S S S S S S S S S S S S S       //"S" means brick type ID. " " means column spacing and _ means no brick there.
+         S S S S S _ _ _ _ S S S S S       // Level is loaded as drawn on here
+         S S S S S _ _ _ _ S S S S S  	  
         </Bricks>
 
         </Level>
