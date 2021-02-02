@@ -1,0 +1,26 @@
+<Level
+RowCount="30"
+ColumnCount="14"
+RowSpacing="3"
+ColumnSpacing="4"
+BackgroundTexture="Images/background.png"
+>
+
+<BrickTypes>
+<!-- Soft Brick -->
+<BrickType
+Id="S"
+Texture="Images/soft.png"
+HitPoints="1"
+HitSound="Sounds/soft.wav"
+BreakSound="Sounds/break.wav"
+BreakScore="50" />
+</BrickTypes>
+
+<Bricks>
+S S S S S S S S S S S S S S 
+S S S S S _ _ _ _ S S S S S
+S S S S S _ _ _ _ S S S S S
+</Bricks>
+
+</Level>
